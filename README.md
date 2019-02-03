@@ -49,3 +49,66 @@ stAnimationFrame||e.msRequestAnimationFrame||function(e){setTimeout(e,1e3/60)}}(
 <script type="text/javascript" src="/js/src/clicklove.js"></script>
 ```
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190128171156368.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2ZseV93dA==,size_16,color_FFFFFF,t_70)
+
+## 3.hexo 给自己的博客添加萌物
+在自己的hexo目录下打开git添加
+
+```bash
+npm install --save hexo-helper-live2d
+```
+### 3.1选择自己喜欢的萌物
+
+```bash
+live2d-widget-model-chitose
+live2d-widget-model-epsilon2_1
+live2d-widget-model-gf
+live2d-widget-model-haru/01 (use npm install --save live2d-widget-model-haru)
+live2d-widget-model-haru/02 (use npm install --save live2d-widget-model-haru)
+live2d-widget-model-haruto
+live2d-widget-model-hibiki
+live2d-widget-model-izumi
+live2d-widget-model-koharu
+live2d-widget-model-miku
+live2d-widget-model-ni-j
+live2d-widget-model-nico
+live2d-widget-model-nietzsche
+live2d-widget-model-nipsilon
+live2d-widget-model-nito
+live2d-widget-model-shizuku
+live2d-widget-model-tororo
+live2d-widget-model-tsumiki
+live2d-widget-model-unitychan
+live2d-widget-model-wanko
+live2d-widget-model-z16
+```
+例如选择： live2d-widget-model-miku
+**安装**
+
+```
+npm install live2d-widget-model-miku
+```
+### 3.2配置
+在站点的 _config.yml 下配置
+
+```css
+live2d:
+  enable: true
+  scriptFrom: local
+  model:
+    use: live2d-widget-model-miku
+  display:
+    position: right
+    width: 150
+    height: 300
+  mobile:
+    show: true
+```
+### 3.3重启查看 可以去我的博客看 ：https://wangtao27.top/
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190129101204529.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2ZseV93dA==,size_16,color_FFFFFF,t_70)
+### 后记
+博主将网上找到的模型都试了一遍，首先我是对二次元没什么兴趣的，所以呢我最终选择了这只黑色的猫咪作为我的守护神兽
+![在这里插入图片描述](https://img-blog.csdnimg.cn/2019012910221745.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2ZseV93dA==,size_16,color_FFFFFF,t_70)
+不要忘记写作的初衷，个性化的设置花费了我两天的时间，而这些只是看上去很酷而已，对于求知还是纯粹些好。
+
+
+
